@@ -1,0 +1,25 @@
+ALGORITHM alg1
+VAR
+    cara:STRING;
+    numbreSpace:=0;
+    nubreVoyelles:=0; 
+    nubreCara:=0;
+    c: CHAR;
+BEGIN
+    write('type a sentence that determines by .');
+    read(cara)
+    WHILE (cara<>'.') DO
+        FOR i FROM 0 TO cara.length-1 STEP 1 DO
+            IF (c=" ") THEN
+                numbreSpace:=numbreSpace+1;
+                else_if (c="a") or (c="e") or (c="y") or (c="u") or (c="o") or (c:="i") THEN
+                nubreVoyelles:=nubreVoyelles+1;
+                Else nubreCara:=nubreCara+1;
+            END
+        END_FOR
+    END_WHILE
+    write(nubreVoyelles)
+    write(nubreCara)
+    write('nombre des mots',numbreSpace)
+
+END
